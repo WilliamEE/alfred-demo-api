@@ -251,9 +251,9 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://alfred-demo-apiv1.herokuapp.com/',
-    //  ],
+    onlyAllowOrigins: [
+      'https://alfred-demo-apiv1.herokuapp.com/',
+     ],
 
 
     /***************************************************************************
