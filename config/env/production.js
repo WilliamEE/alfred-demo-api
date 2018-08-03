@@ -71,7 +71,8 @@ module.exports = {
       *                                                                           *
       ****************************************************************************/
       // ssl: true,
-
+      adapter: 'sails-mongo',
+      url: process.env.MONGODB_URI || 'mongodb://root@localhost/alfred_demo'
     },
 
   },
@@ -250,10 +251,9 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
-    //   'https://example.com',
-    //   'https://staging.example.com',
-    // ],
+    onlyAllowOrigins: [
+      'https://alfred-demo-apiv1.herokuapp.com/',
+     ],
 
 
     /***************************************************************************
