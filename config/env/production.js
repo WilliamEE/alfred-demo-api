@@ -70,7 +70,7 @@ module.exports = {
       * https://sailsjs.com/config/datastores                                     *
       *                                                                           *
       ****************************************************************************/
-      // ssl: true,
+      ssl: true,
       adapter: 'sails-mongo',
       url: process.env.MONGODB_URI || 'mongodb://root@localhost/alfred_demo'
     },
